@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QUICK PC SOLUTIONS - Home</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="background-container"></div>
+        <header>
+            <div class="logo">
+                
+                <img src="/images/logo.webp" alt="Quick PC Solutions Logo"> <!-- Path to your logo -->
+            </div>
+            <h1>QUICK PC SOLUTIONS</h1> <!-- The main header text -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="news/news.html">Tech News</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="guides/guides.html">Guides</a></li>
+            <li><a href="contact_us.html">Contact us</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <!-- Button to toggle the visibility of the search bar -->
+            <button onclick="toggleSearch()">Search</button>
+
+            <!-- Search Form -->
+            <form id="search-form" onsubmit="return false;" style="display: none;">
+                <input type="text" id="search-query" placeholder="Search..." />
+                <button type="submit" onclick="performSearch()">Search</button>
+            </form>
+        </ul>
+    </nav>
+</header>
+    
+<main>
+    <section class="hero">
+        <h2>WELCOME TO QUICK PC SOLUTIONS</h2>
+        <p>Your ultimate source for PC tech news, reviews, and guides.</p>
+        <a href="#latest-articles" class="cta-button">Explore Now</a>
+    </section>
+
+    <section id="latest-articles" class="articles">
+
+        <div class="article-row">
+            <article>
+                <img src="images/pc.jpg" alt="PC Build Review">
+                <h3>Latest PC Build Reviews</h3>
+                <p>Explore our in-depth reviews of the latest gaming PC builds and budget systems.</p>
+                <a href="#">Read more</a>
+            </article>
+
+            <article>
+                <img src="images/monitor.jpg" alt="Gaming Monitors">
+                <h3>Best Gaming Monitors of 2025</h3>
+                <p>Discover the best gaming monitors that will elevate your gaming experience.</p>
+                <a href="#">Read more</a>
+            </article>
+        </div>
+
+        <div class="article-row">
+            <article>
+                <img src="images/cooling.jpg" alt="PC Cooling Solutions">
+                <h3>PC Cooling Solutions</h3>
+                <p>Learn how to cool your high-end PC build with the latest cooling solutions.</p>
+                <a href="guides/guide-cooling.html">Read more</a>
+            </article>
+
+            <article>
+                <img src="images/bluescreen.avif" alt="Blue Screen Error" width="450">
+                <h3>How to Fix Blue Screen Errors</h3>
+                <p>Learn how to diagnose and fix common blue screen errors on Windows.</p>
+                <a href="guides/blue-screen.html">Read more</a>
+            </article>
+        </div>
+
+        <div class="article-row">
+            <article>
+                <img src="images/cables.jpg" alt="Cable Connection" width="400">
+                <h3>Fix Cable Connection Problems</h3>
+                <p>Learn how to diagnose and fix cable connection issues in your PC setup.</p>
+                <a href="guides/guide-cables.html">Read more</a>
+            </article>
+        </div>
+        <div class="article-row">
+            <article>
+                <img src="images/how-to-fix-slow-computer.jpeg" alt="Slow PC" width="400">
+                <h3>Why Is My PC So Slow?</h3>
+                <p>Find out what slows your PC down and how to make it faster.</p>
+                <a href="guides/slow-pc.html">Read more</a>
+            </article>
+        </div>
+
+    </section>
+</main>
+
+
+    <!-- Chatbot -->
+    <div class="chat-toggle" id="chat-toggle">ChatBot</div>
+    <div class="chatbot-container" id="chatbot">
+        <div class="chat-header">
+            Chat with us 
+            <span class="minimize-icon" id="minimize-chat">–</span>
+        </div>
+        <div class="chat-body" id="chat-body"></div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type a message...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <!-- Include Chatbot CSS -->
+    <link rel="stylesheet" href="css/chatbot.css">
+
+    <!-- Include Chatbot JavaScript -->
+    <script src="chatbot.js"></script>
+    <script src="searchF.js"></script>
+
+    <footer>
+    <p>&copy; 2025 Quick PC Solutions </p>
+</footer>
+
+</body>
+</html>
